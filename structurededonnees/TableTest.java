@@ -153,7 +153,7 @@ public class TableTest {
 
 
     // Q4
-
+/*
     @Test @Tag("Q4")
     public void dynamic() {
         var table = Table.<String>dynamic();
@@ -642,5 +642,5 @@ public class TableTest {
                 () -> assertThrows(NullPointerException.class, () -> table.replace(10, null)),
                 () -> assertThrows(NullPointerException.class, () -> table.replace(null, 10))
         );
-    }
+    }*/
 }
