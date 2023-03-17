@@ -11,4 +11,9 @@ public class Camel extends Vehicle {
     public String toString() {
         return "camel " + getYear();
     }
+
+    @Override
+    public boolean equals(Object o) {
+        return super.equals(o);
+    }
 }

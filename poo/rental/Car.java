@@ -10,4 +10,9 @@ public class Car extends Vehicle {
     public String toString() {
         return getModele() + " " + getYear();
     }
+
+    @Override
+    public boolean equals(Object o) {
+        return super.equals(o);
+    }
 }

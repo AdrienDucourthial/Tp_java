@@ -23,11 +23,18 @@ public class CarRental {
     }
 
     public void remove(Vehicle v) {
+        // Remove the vehicle
+        var present = false;
         for (int i = 0; i < index; i++) {
-            if (this.carListe[i] == v) {
+            if (this.carListe[i].equals(v)) {
                 this.carListe[i] = null;
+                present = true;
             }
         }
+        if (!present) {
+            throw new IllegalStateException("Vehicle not found.");
+        }
+        // Rebuild the list
         var tmp = new Vehicle[this.size];
         int j = 0;
         for (int i = 0; i < index; i++) {

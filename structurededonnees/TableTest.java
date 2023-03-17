@@ -1,8 +1,8 @@
-```Java
-package tp.structurededonnees;
+package structurededonnees;
 
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import structurededonnees.tables.Table;
 
 import java.sql.Timestamp;
 import java.time.Duration;
@@ -644,4 +644,3 @@ public class TableTest {
         );
     }
 }
-```
